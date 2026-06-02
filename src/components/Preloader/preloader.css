@@ -1,0 +1,18 @@
+/* In your CSS file */
+.image-progress-fill {
+  background: linear-gradient(90deg, #00ff00, #00aa00) !important;
+}
+
+.current-frame {
+  color: #00ff00 !important;
+}
+
+.frame-dot.active {
+  background: #00ff00 !important;
+}
+
+
+.dog-sprite-frame {
+  width: 200px !important;
+  height: 200px !important;
+}

@@ -1,0 +1,32 @@
+.preloader {
+  position: fixed;
+  inset: 0;
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+/* 👇 sprite animation */
+.dog-runner {
+  width: 140px;          /* ONE dog frame width */
+  height: 80px;          /* ONE dog frame height */
+
+  background-image: url("./assets/dog-sprite.png");
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+
+  animation: run 1s steps(16) infinite;
+}
+
+/* total frames = 16 */
+@keyframes run {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -2240px 0;
+    /* 140px × 16 frames = 2240px */
+  }
+}
